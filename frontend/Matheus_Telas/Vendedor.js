@@ -14,7 +14,7 @@ function renderizarCard(est) {
     const vagasMotos = est.motos || 10;
     const vagasCarros = est.carros || 10;
     const vagasCaminhoes = est.caminhoes || 0;
-    const bairroExibicao = est.bairro ? ` - ${est.bairro}` : "";
+    const bairroExibicao = est.endereco ? ` - ${est.endereco}` : "";
 
     card.innerHTML = `
         <div class="parking-title">

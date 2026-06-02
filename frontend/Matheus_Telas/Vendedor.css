@@ -307,20 +307,20 @@ header.topbar {
 }
 
 .edit-btn:hover {
-    background: #5c8fd8;
+    background-color: #5c8fd8;
     transform: scale(1.1);
 }
 
 .delete-btn {
-    background: rgba(220, 53, 69, 0.15);
+    background-color: rgba(220, 53, 69, 0.15);
     color: #ff6b6b;
 }
 
 .delete-btn:hover {
-    background: #dc3545;
+    background-color: #dc3545;
     color: white;
     transform: scale(1.1);
-    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+   
 }
 
 .edit {
@@ -343,7 +343,7 @@ header.topbar {
     transition: background 0.2s, transform 0.2s;
 }
 
-.edit button:hover {
+.edit-btn button:hover {
     background: #5c8fd8;
     transform: scale(1.1);
 }
