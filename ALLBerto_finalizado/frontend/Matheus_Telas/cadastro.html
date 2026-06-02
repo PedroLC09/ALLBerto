@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Tela De Cadastro Cliente/Vendedor</title>
+
+</head>
+
+
+
+<body>
+
+
+
+    <div class="container" id="container">
+
+     <div class="container" id="container">
+    <div class="form-container sign-up">
+        <form id="formParceiro"> <h1>Parceiro</h1>
+            <div class="social-icons">
+                <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <span>Por uma assinatura você consegue faturar uma bolada dando maior visibilidade do seu estaionamento para nossos usuários enquanto tem total controle do seu fluxo de vendas e de usuários!</span>
+            <input type="text" id="nomeParceiro" placeholder="Nome" required>
+            <input type="email" id="emailParceiro" placeholder="Email" required>
+            <input type="password" id="senhaParceiro" placeholder="Senha" required>
+            <a id="log" href="#">Entrar com sua conta</a>
+            <button type="submit">Inscreva-se</button>
+        </form>
+    </div>
+
+    <div class="form-container sign-in">
+        <form id="formNavegante"> <h1>Navegante</h1>
+            <div class="social-icons">
+                <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <span> Aqui você encontra as melhores vagas disponíveis na cidade e pode alugá-las direto do conforto de casa! nosso app guia você até elas também ;)</span>
+            <input type="text" id="nomeNavegante" placeholder="Nome" required>
+            <input type="email" id="emailNavegante" placeholder="Email" required>
+            <input type="password" id="senhaNavegante" placeholder="Senha" required>
+            <a id="log" href="#">Entrar com sua conta</a>
+            <button type="submit">Inscreva-se</button>
+        </form>
+    </div>
+
+        </div>
+
+        <div class="toggle-container">
+
+            <div class="toggle">
+
+                <div class="toggle-panel toggle-left">
+
+                    <h1>Ou torne-se um Navegante :D</h1>
+
+                    <p>Aqui você encontra as melhores vagas disponíveis na cidade e pode alugá-las direto do conforto de casa! nosso app guia você até elas também ;)</p>
+
+                    <button class="hidden" id="login">Torne-se um Navegante</button>
+
+                </div>
+
+                <div class="toggle-panel toggle-right">
+
+                    <h1>Ou torne-se um Parceiro :)</h1>
+
+                    <p>Por uma assinatura você consegue faturar uma bolada dando maior visibilidade do seu estaionamento para nossos usuários enquanto tem total controle do seu fluxo de vendas e de usuários!</p>
+
+                    <button class="hidden" id="register">Torne-se um Parceiro</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+
+
+</html>

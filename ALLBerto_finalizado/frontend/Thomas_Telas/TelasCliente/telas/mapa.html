@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AllBerto</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="./css/tela1.css">
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <!-- MAPA -->
+
+    <div id="map-container">
+
+        <iframe
+        src="https://www.google.com/maps?q=ingleses,florianopolis&z=15&output=embed"
+        loading="lazy"
+        allowfullscreen>
+        </iframe>
+
+    </div>
+
+
+    <!-- LOGO -->
+
+   <a href="../../../Matheus_Telas/Vendedor.html" class="logo-link">
+        <div class="logo-card">
+            <img src="WhatsApp Image 2026-06-02 at 04.23.42.jpeg" alt="Perfil">
+            <div>
+                <strong>AllBerto</strong>
+                <small>Tudo por perto</small>
+            </div>
+        </div>
+    </a>
+
+    <!-- GPS -->
+
+    <button class="gps-btn">
+
+        <i class="bi bi-crosshair"></i>
+
+    </button>
+
+    <!-- BOTTOM SHEET -->
+
+    <div id="bottomSheet" class="bottom-sheet">
+
+        <div id="handle" class="drag-handle"></div>
+
+        <div class="sheet-content">
+
+            <div class="search-box">
+
+                <i class="bi bi-search"></i>
+
+                <input
+                type="text"
+                placeholder="Vamos para onde?">
+
+                <i class="bi bi-mic-fill"></i>
+
+            </div>
+
+            <!-- FILTROS -->
+
+            <div class="filters">
+
+                <button class="filter-btn">
+                    <i class="bi bi-car-front-fill"></i>
+                    Carro
+                </button>
+
+                <button class="filter-btn">
+                    <i class="bi bi-bicycle"></i>
+                    Moto
+                </button>
+
+                <button class="filter-btn">
+                    <i class="bi bi-truck"></i>
+                    Caminhão
+                </button>
+
+            </div>
+
+            <!-- ESTACIONAMENTOS -->
+
+            <h5 class="mt-4">
+                Estacionamentos próximos
+            </h5>
+
+            <div class="parking-card">
+
+                <h6>Shopping Central</h6>
+
+                <span>1.2 km</span>
+
+                <small>15 vagas livres</small>
+
+            </div>
+
+            <div class="parking-card">
+
+                <h6>Centro Empresarial</h6>
+
+                <span>2.4 km</span>
+
+                <small>8 vagas livres</small>
+
+            </div>
+
+            <div class="parking-card">
+
+                <h6>Terminal Norte</h6>
+
+                <span>3.1 km</span>
+
+                <small>22 vagas livres</small>
+
+            </div>
+
+            <!-- VAGAS -->
+
+            <div class="detalhes">
+
+                <h5>Disponibilidade</h5>
+
+                <div class="legenda">
+
+                    <span>
+
+                        <div class="dot livre"></div>
+
+                        Livre
+
+                    </span>
+
+                    <span>
+
+                        <div class="dot ocupada"></div>
+
+                        Ocupada
+
+                    </span>
+
+                    <span>
+
+                        <div class="dot reservada"></div>
+
+                        Reservada
+
+                    </span>
+
+                </div>
+
+                <div id="vagas" class="vagas-grid"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="./js/tela1.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AllBerto - Estacionamento</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<link rel="stylesheet" href="edit.css">
+</head>
+<body>
+
+<header>
+
+    <div class="logo">
+         <img src="WhatsApp Image 2026-06-02 at 04.23.42.jpeg" alt="Logo AllBerto" style="width: 50px; height: 50px; border-radius: 8px; object-fit: cover;">
+        <div>
+            <h2>AllBerto</h2>
+            <span>Tudo por perto :)</span>
+        </div>
+    </div>
+
+    <div class="menu">
+
+     <img src="desk-lamp.png" id="lampIcon" alt="Abajur" style="width: 28px; height: 28px; cursor: pointer; transition: filter 0.3s ease, transform 0.2s ease;">
+      <a href="../Matheus_Telas/Vendedor.html">
+      <i class="fa-solid fa-chart-column"></i>
+        Dashboard
+      </a>
+
+        <a href="#">
+            <i class="fa-solid fa-chart-column"></i>
+            Dashboard
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-bell"></i>
+            Notificações
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-gear"></i>
+            Configurações
+        </a>
+
+        <div class="user">
+            <img src="5a105a22-1fa8-4354-824c-05536d7b5e1b.jpg" class="avatar">
+            <span id="userName">Alberto</span>
+        </div>
+
+    </div>
+
+</header>
+
+<div class="container">
+
+    <section class="dashboard">
+
+        <h2>Rendimentos</h2>
+        <p>Comparado ao mês passado</p>
+
+        <div class="stats">
+
+            <div class="stat-card">
+                <i class="fa-solid fa-motorcycle"></i>
+                <h3>40 vagas alugadas</h3>
+                <p>+ R$ 400,43</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-car"></i>
+                <h3>20 vagas alugadas</h3>
+                <p>+ R$ 524,17</p>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-truck"></i>
+                <h3>10 vagas alugadas</h3>
+                <p>+ R$ 159,00</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="panel">
+
+        <div class="top-form">
+
+            <div class="nome">
+                <label>Nome do Estacionamento</label>
+                <input type="text" id="nomeInput" placeholder="Nome do Estacionamento">
+            </div>
+
+            <div class="endereco">
+                <label>Endereço</label>
+                <input type="text" id="enderecoInput" placeholder="Rua, número, bairro">
+            </div>
+
+            <div class="horario">
+
+                <div>
+                    <label>Abre às</label>
+                    <input type="time">
+                </div>
+
+                <div>
+                    <label>Fecha às</label>
+                    <input type="time">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="section">
+
+            <div class="vagas-container">
+
+                <div class="vaga-card">
+
+                    <h3>🏍️ Motos</h3>
+
+                    <div class="vagas-grid motos"></div>
+
+                    <input
+                    type="number" id="vagasMotos"
+                    placeholder="Quantidade">
+
+                    <input
+                    class="price-input" step="0.01" id="precoHoraMotos"
+                    placeholder="R$ por Hora">
+
+                    <input
+                    class="price-input" step="0.01" id="precoDiariaMotos"
+                    placeholder="R$ por Diária">
+
+                </div>
+
+                <div class="vaga-card">
+
+                    <h3>🚗 Carros</h3>
+
+                    <div class="vagas-grid carros"></div>
+
+                    <input
+                    type="number" id="vagasCarros"
+                    placeholder="Quantidade">
+
+                    <input
+                    class="price-input" step="0.01" id="precoHoraCarros"
+                    placeholder="R$ por Hora">
+
+                    <input
+                    class="price-input" step="0.01" id="precoDiariaCarros"
+                    placeholder="R$ por Diária">
+
+                </div>
+
+                <div class="vaga-card">
+
+                    <h3>🚚 Caminhões</h3>
+
+                    <div class="vagas-grid caminhoes"></div>
+
+                    <input
+                    type="number" id="vagasCaminhoes" 
+                    placeholder="Quantidade">
+
+                    <input
+                    type="number" step="0.01" id="precoHoraCaminhoes"
+                    class="price-input" 
+                    placeholder="R$ por Hora">
+
+                    <input
+                    type="number" step="0.01" id="precoDiariaCaminhoes"
+                    class="price-input"
+                    placeholder="R$ por Diária">
+
+                </div>
+
+            </div>
+
+            <div class="dias">
+
+                <button class="dia active">Segunda</button>
+                <button class="dia active">Terça</button>
+                <button class="dia active">Quarta</button>
+                <button class="dia active">Quinta</button>
+                <button class="dia active">Sexta</button>
+                <button class="dia">Sábado</button>
+                <button class="dia">Domingo</button>
+
+            </div>
+
+            <div class="images">
+
+                <label class="upload">
+                    <input type="file" hidden accept="image/*">
+                    <img>
+                    <span>IMAGEM</span>
+                </label>
+
+                <label class="upload">
+                    <input type="file" hidden accept="image/*">
+                    <img>
+                    <span>IMAGEM</span>
+                </label>
+
+                <label class="upload">
+                    <input type="file" hidden accept="image/*">
+                    <img>
+                    <span>IMAGEM</span>
+                </label>
+
+            </div>
+
+            <button class="save">
+                Salvar Estacionamento
+            </button>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="edit.js"></script>
+
+</body>
+</html>

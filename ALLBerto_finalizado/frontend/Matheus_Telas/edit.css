@@ -1,0 +1,474 @@
+:root {
+    --primary: #4f8cff;
+    --primary-dark: #346ee8;
+    --success: #22c55e;
+    --success-dark: #16a34a;
+    --danger: #ef4444;
+    --bg: #f1f5f9; /* Um cinza levemente mais limpo e moderno */
+    --card: #1e293b; /* Mudado de #4c5667 para um Slate Dark premium, melhora muito o contraste */
+    --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    --transition: all 0.2s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: #334155;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --- HEADER --- */
+/* --- HEADER --- */
+header {
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary), #639aff);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    color: white;
+    box-shadow: 0 4px 20px rgba(79, 140, 255, 0.25);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo i {
+    font-size: 38px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo h2 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.logo span {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.menu a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition);
+}
+
+.menu a:hover {
+    color: white;
+    transform: translateY(-1px);
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #cbd5e1;
+    border: 2px solid white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+}
+
+/* --- CONTAINER --- */
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 40px 25px;
+}
+
+/* --- DASHBOARD --- */
+.dashboard {
+    background: linear-gradient(135deg, #064e3b, #047857);
+    color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(6, 78, 59, 0.15);
+    margin-bottom: 35px;
+}
+
+.dashboard h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.dashboard p {
+    font-size: 13px;
+    color: #a7f3d0;
+    margin-top: 2px;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.stat-card {
+    flex: 1;
+    min-width: 240px;
+    padding: 22px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: var(--transition);
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.stat-card i {
+    font-size: 24px;
+    color: #34d399;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.stat-card h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #e6f4ea;
+}
+
+.stat-card p {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    margin-top: 4px;
+}
+
+/* --- FORM PANEL --- */
+.panel {
+    background: var(--card);
+    color: white;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: var(--shadow);
+}
+
+.top-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.nome {
+    flex: 2;
+    min-width: 280px;
+}
+
+.endereco {
+    flex: 2;
+    min-width: 280px;
+}
+
+.horario {
+    display: flex;
+    gap: 15px;
+    flex: 1;
+    min-width: 240px;
+}
+
+.horario > div {
+    flex: 1;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #94a3b8;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 14px 16px;
+    outline: none;
+    background: #2d3748;
+    color: white;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+input::placeholder {
+    color: #64748b;
+}
+
+input:focus {
+    border-color: var(--primary);
+    background: #334155;
+    box-shadow: 0 0 0 4px rgba(79, 140, 255, 0.15);
+}
+
+.section {
+    margin-top: 40px;
+}
+
+/* --- VAGAS CARDS --- */
+.vagas-container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.vaga-card {
+    flex: 1;
+    min-width: 280px;
+    padding: 25px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.vaga-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #f8fafc;
+}
+
+.vagas-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    border-radius: 12px;
+    justify-items: center;
+}
+
+.vaga {
+    width: 16px;
+    height: 16px;
+    background: var(--success);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 0 8px rgba(34, 197, 94, 0.4);
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #cbd5e1;
+    border: 2px solid white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+}
+
+.vaga:hover {
+    transform: scale(1.25);
+}
+
+/* Ajuste dinâmico quando a vaga está ocupada (vermelha) */
+.vaga[style*="rgb(239, 68, 68)"], 
+.vaga[style*="#ef4444"] {
+    box-shadow: 0 0 8px rgba(239, 68, 68, 0.5);
+}
+
+.price-input {
+    width: 100%;
+    margin-top: 12px;
+}
+
+/* --- SELEÇÃO DE DIAS --- */
+.dias {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    border-radius: 14px;
+    display: inline-flex;
+}
+
+.dia {
+    background: transparent;
+    color: #94a3b8;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.dia:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo i {
+    font-size: 36px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.logo span {
+    font-size: 13px;
+    opacity: 0.85;
+}
+.dia.active {
+    background: var(--primary);
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(79, 140, 255, 0.3);
+}
+
+/* --- UPLOAD IMAGES --- */
+.images {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.upload {
+    flex: 1;
+    min-width: 200px;
+    height: 160px;
+    background: #2d3748;
+    border-radius: 16px;
+    border: 2px dashed #475569;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.upload:hover {
+    border-color: var(--primary);
+    background: #334155;
+}
+
+.upload span {
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+.upload:hover span {
+    color: var(--primary);
+}
+
+.upload img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- BOTÃO SALVAR --- */
+.save {
+    margin-top: 40px;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 12px;
+    background: var(--success);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(34, 197, 94, 0.25);
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+}
+
+.save:hover {
+    background: var(--success-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(34, 197, 94, 0.35);
+}
+
+
+
+/* --- APENAS O EFEITO DO MODO ESCURO SEM ALTERAR SEUS CARDS --- */
+
+/* Abajur no modo claro (fica branco para combinar com seu menu azul) */
+#lampIcon {
+    filter: brightness(0) invert(1);
+}
+#lampIcon:hover {
+    transform: scale(1.1);
+}
+
+/* Quando o modo escuro estiver ativo, muda APENAS o fundo geral do site */
+body.dark-mode {
+    background: #141923 !important; /* Muda só o fundo do site */
+}
+
+/* Faz o abajur acender em amarelo */
+body.dark-mode #lampIcon {
+    filter: drop-shadow(0 0 6px #ffd000) drop-shadow(0 0 12px #ffbb00) brightness(1.3);
+}
+

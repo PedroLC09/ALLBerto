@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllBerto</title>
+
+    <link rel="stylesheet" href="Vendedor.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="logo">
+        <img src="WhatsApp Image 2026-06-02 at 04.23.42.jpeg" alt="Logo AllBerto" style="width: 50px; height: 50px; border-radius: 8px; object-fit: cover;">
+        <div>
+            <h2>AllBerto</h2>
+            <span>Tudo por perto ;)</span>
+        </div>
+    </div>
+
+    <div class="menu">
+        <button id="themeToggleBtn" title="Alternar Modo Claro/Escuro">
+            <img src="desk-lamp.png" id="lampIcon" alt="Abajur">
+        </button>
+
+        <button id="addParkingBtn" title="Adicionar Estacionamento"><i class="fa-solid fa-plus"></i></button>
+        <button title="Notificações"><i class="fa-solid fa-bell"></i></button>
+        <button title="Configurações"><i class="fa-solid fa-gear"></i></button>
+
+        <div class="user">
+            <img src="5a105a22-1fa8-4354-824c-05536d7b5e1b.jpg" class="avatar">
+            <span id="userName">Alberto</span>
+        </div>
+    </div>
+</header>
+
+<section class="dashboard">
+    <div class="earnings">
+        <div class="earnings-title">
+            <h2>$ Rendimentos</h2>
+            <small>Comparado ao mês passado</small>
+        </div>
+
+        <div class="stat green">
+            <span>↑ R$1518,43</span>
+        </div>
+
+        <div class="stat red">
+            <span>↓ R$400,43</span>
+        </div>
+
+        <div class="vehicle-card">
+            <i class="fa-solid fa-motorcycle"></i>
+            <h3>40 vagas alugadas</h3>
+            <p>R$400,43</p>
+        </div>
+
+        <div class="vehicle-card">
+            <i class="fa-solid fa-car"></i>
+            <h3>20 vagas alugadas</h3>
+            <p>R$524,17</p>
+        </div>
+
+        <div class="vehicle-card danger">
+            <i class="fa-solid fa-truck"></i>
+            <h3>10 vagas alugadas</h3>
+            <p>R$159,00</p>
+        </div>
+    </div>
+</section>
+
+<main id="parkingContainer"></main>
+
+<script src="Vendedor.js"></script>
+</body>
+</html>
